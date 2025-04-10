@@ -64,9 +64,10 @@ if st.button("🎯 Recommend"):
     if results:
         st.subheader(f"🔍 Recommendations for **{product}**:")
         for name, cat, price, score in results:
-            st.markdown(f"**➤ {name}**")  
-_Category_: {cat}  
-_Price_: ${price}  
-_Score_: {round(score, 2)}")
+            st.markdown(f"""
+**➤ {name}**
+_Price_: ₹{price}  
+_Score_: {round(score, 2)}
+""")
     else:
         st.warning("No products match the selected filters.")
