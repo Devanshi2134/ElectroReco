@@ -64,7 +64,7 @@ if st.button("🎯 Recommend"):
     if results:
         st.subheader(f"🔍 Recommendations for **{product}**:")
         for name, cat, price, score in results:
-            st.markdown(f"**➤ {name}**  
+            st.markdown(f"**➤ {name}**")  
 _Category_: {cat}  
 _Price_: ${price}  
 _Score_: {round(score, 2)}")
